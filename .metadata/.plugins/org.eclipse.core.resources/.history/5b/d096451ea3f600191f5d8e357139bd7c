@@ -1,0 +1,7 @@
+Feature: Using Gherkin 
+
+Scenario: Verify Login With Invalid Credentials
+Given user opens browser and logins to the site
+Then user enters username and password
+Then user click on the login button
+Then login fails with the invalid login message 

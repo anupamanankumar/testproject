@@ -1,0 +1,6 @@
+Feature: Using Gherkin 
+
+Scenario: Testing the Login Features
+Given This is my first step
+When  This is my second step
+Then this is my final step

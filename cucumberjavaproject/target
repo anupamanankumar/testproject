@@ -1,0 +1,218 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify Login With Invalid Credentials",
+        "description": "",
+        "id": "using-gherkin;verify-login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4862229613,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user opens browser and logins to the site",
+            "match": {
+              "location": "LoginPageSteps.user_opens_browser_and_logins_to_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 456521586,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters username as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 278667784,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121755569,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on the login button",
+            "match": {
+              "location": "LoginPageSteps.user_click_on_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 326078233,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login fails with the invalid login message",
+            "match": {
+              "location": "LoginPageSteps.login_fails_with_the_invalid_login_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 895623173,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "close the application",
+            "match": {
+              "location": "LoginPageSteps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Retrieve Login Crdentials With Invalid UserName",
+        "description": "",
+        "id": "using-gherkin;retrieve-login-crdentials-with-invalid-username",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4020696518,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user opens browser and logins to the site",
+            "match": {
+              "location": "LoginPageSteps.user_opens_browser_and_logins_to_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 569788952,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters username as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_username(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 236499343,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enters password as \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150378922,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on the login button",
+            "match": {
+              "location": "LoginPageSteps.user_click_on_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 231294359,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "login fails with the invalid login message",
+            "match": {
+              "location": "LoginPageSteps.login_fails_with_the_invalid_login_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 274162393,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "retrieve user name and verify the invalid login message text color is \"#a94442\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "#a94442",
+                  "offset": 71
+                }
+              ],
+              "location": "LoginPageSteps.verify_the_invalid_login_message_text_color_is(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1055873969,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "close the application",
+            "match": {
+              "location": "LoginPageSteps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Using Gherkin",
+    "description": "",
+    "id": "using-gherkin",
+    "keyword": "Feature",
+    "uri": "src/features/loginfeature.feature"
+  }
+]

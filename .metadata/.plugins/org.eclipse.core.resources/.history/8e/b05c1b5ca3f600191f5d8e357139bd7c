@@ -1,0 +1,37 @@
+package stepDefinitions;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import utils.TestBase;
+
+public class LoginPageSteps extends  TestBase{
+	@Given("^user opens browser and logins to the site$")
+	public void user_opens_browser_and_logins_to_the_site() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		TestBase.initDriver();
+	}
+
+	@Then("^user enters username as$")
+	public void user_enters_username(String arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+
+	@Then("^user enters password as$")
+	public void user_enters_password(String arg2) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	   
+	}
+	@Then("^user click on the login button$")
+	public void user_click_on_the_login_button() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Then("^login fails with the invalid login message$")
+	public void login_fails_with_the_invalid_login_message() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+}
