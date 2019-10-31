@@ -15,4 +15,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="utils.TestBase"/>
 <fullyQualifiedTypeName name="org.junit.AfterClass"/>
+<fullyQualifiedTypeName name="pages.PasswordResetPage"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.And"/>
 </qualifiedTypeNameHistroy>

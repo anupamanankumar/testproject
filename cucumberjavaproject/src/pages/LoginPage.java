@@ -13,6 +13,7 @@ public class LoginPage extends TestBase {
 	By login_page_loginbutton = By.xpath("//button[text()='Login']");
 	By login_page = By.id("conversations-app");
 	By login_page_invalidloginmessage = By.xpath("//div[@id='conversations-app']//div[@class='auth-errors']");
+	By login_page_forget_link = By.linkText("Forget?");
 
 	public LoginPage() {
 
@@ -34,6 +35,11 @@ public class LoginPage extends TestBase {
 		driver.findElement(login_page_password).clear();
 
 		driver.findElement(login_page_password).sendKeys(text);
+
+	}
+
+	public void clickForgetLink() {
+		driver.findElement(login_page_forget_link).click();
 
 	}
 
@@ -64,5 +70,4 @@ public class LoginPage extends TestBase {
 
 	}
 
-	
 }

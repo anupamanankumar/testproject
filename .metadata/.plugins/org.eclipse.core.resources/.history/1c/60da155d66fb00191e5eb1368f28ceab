@@ -1,0 +1,91 @@
+package pages;
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.support.Color;
+
+import utils.TestBase;
+
+public class PasswordResetPage extends TestBase {
+
+	By login_page_username = By.name("username");
+	By login_page_password = By.name("password");
+	By login_page_loginbutton = By.xpath("//button[text()='Login']");
+	By login_page = By.id("conversations-app");
+	By login_page_invalidloginmessage = By.xpath("//div[@id='conversations-app']//div[@class='auth-errors']");
+
+	public PasswordResetPage() {
+
+	}
+
+	public void setUserName(String text) {
+		driver.findElement(login_page_username).clear();
+		driver.findElement(login_page_username).sendKeys(text);
+
+	}
+
+	public String getUserName() {
+
+		System.out.print("usename" + driver.findElement(login_page_username).getText());
+		return driver.findElement(login_page_username).getText();
+	}
+
+	public void setPassword(String text) {
+		driver.findElement(login_page_password).clear();
+
+		driver.findElement(login_page_password).sendKeys(text);
+
+	}
+
+	public void clickLoginButton() {
+		driver.findElement(login_page_loginbutton).click();
+
+	}
+
+	public String invalidloginMessage() {
+		String invalidLoginMessage = null;
+
+		if (driver.findElement(login_page_invalidloginmessage) != null) {
+
+			invalidLoginMessage = driver.findElement(login_page_invalidloginmessage).getText();
+			return invalidLoginMessage;
+		}
+		return invalidLoginMessage;
+	}
+
+	public String invalidloginMessageTextColor() {
+		String colorString = null;
+		if (driver.findElement(login_page_invalidloginmessage) != null) {
+			colorString = Color.fromString(driver.findElement(login_page_invalidloginmessage).getCssValue("color"))
+					.asHex();
+			return colorString;
+		}
+		return colorString;
+
+	}
+
+	@Then("^user gets to Password Reset Page$")
+	public void user_gets_to_Password_Reset_Page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^user click on the Reset Password Button$")
+	public void user_click_on_the_Reset_Password_Button() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^reset fails with the invalid username message$")
+	public void reset_fails_with_the_invalid_username_message() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^verify the username message text color is \"([^\"]*)\"$")
+	public void verify_the_username_message_text_color_is(String arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+}
